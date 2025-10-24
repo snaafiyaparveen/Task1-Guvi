@@ -1,26 +1,19 @@
 package Task1;
 
 public class Sol6 {
-
     public static void main(String[] args) {
-        int n = 5;
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n ; j++) {
-                for (int k = i; k <=1 ; k++) {
-
-                    if (j<i){
-                        System.out.print(n-i+1);
-                    }else
-                        System.out.print(n-j+1);
+        int x = 0;
+        for (int i = 5; i >= 1 ; i--) {
+            int a = 5;
+            for (int k = 0; k < x; k++) {
+                System.out.print(a);
+                a--;
             }
+            for (int j = 1; j <= 5 - x ; j++) {
+                System.out.print(i);
             }
             System.out.println();
+            x++;
         }
     }
 }
-
-//55555
-//54444
-//54333
-//54322
-//54321
